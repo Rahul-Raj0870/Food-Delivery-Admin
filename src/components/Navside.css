@@ -1,0 +1,49 @@
+.sidebar{
+    width: 18%;
+    min-height: 100vh;
+    border: 1.5px solid grey;
+    border-top: 0;
+    border-left: 0;
+    font-size: max(1vw,10px);
+   
+}
+.btn{
+    padding: 10px 12px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    /* color: white; */
+}
+.side-option{
+    padding-top: 50px;
+    padding-left: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.option{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid grey;
+    border-right: 0;
+    padding: 8px 10px;
+    border-radius: 10px 0px 0px 10px;
+    cursor: pointer;
+    /* color: white; */
+}
+.option.active{
+    background-color: #001f3f;
+    border: solid 2px #FE4F32;
+    color: white;
+}
+.option.active>.btn{
+    color: white;
+}
+@media (max-width:900px) {
+    .side-option p{
+        display: none;
+    }
+}
